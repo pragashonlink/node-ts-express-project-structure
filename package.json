@@ -1,0 +1,62 @@
+{
+  "name": "noagent-api",
+  "version": "1.0.0",
+  "description": "Property API project",
+  "main": "src/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "heroku-postbuild": "npm run build",
+    "start": "nodemon",
+    "inspect": "nodemon --inspect src/app.ts",
+    "test": "jest",
+    "lint": "npm run lint:js ",
+    "lint:eslint": "eslint --ignore-path .gitignore --ext .ts",
+    "lint:js": "npm run lint:eslint src/",
+    "lint:fix": "npm run lint:js -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragashonlink/node-ts-express-project-structure.git"
+  },
+  "keywords": [
+    "boilerplay",
+    "cron",
+    "jobs",
+    "js",
+    "javascript",
+    "typescript",
+    "node",
+    "express"
+  ],
+  "author": "Pragash Rajarathnam",
+  "license": "ISC",
+  "homepage": "https://github.com/pragashonlink/node-ts-express-project-structure.git#readme",
+  "dependencies": {
+    "@useoptic/express-middleware": "0.0.5",
+    "agenda": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "celebrate": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "errorhandler": "^1.5.1",
+    "event-dispatch": "^0.4.1",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "mongodb": "^4.1.3",
+    "mongoose": "^5.10.6",
+    "node-preload": "^0.2.1",
+    "prettier": "^2.4.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.3.0",
+    "typedi": "^0.10.0",
+    "typescript": "^4.4.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "tsconfig-paths": "^3.11.0"
+  }
+}
